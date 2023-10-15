@@ -1,0 +1,277 @@
+steps:
+  DIM_PASSENGER_INFO-26a1fb4c-3aee-4d5e-ace6-428b280af502:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: AIRLINES_TARGET
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ca39cf1a-4053-4286-a482-c7d3282f4ff4
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSurrogateKey: true
+            name: DIM_PASSENGER_INFO_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - columnReference:
+              columnCounter: 17572848-5854-4078-bfbc-3a9bf9be765b
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PASSENGERID
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3d9e18de-6ee8-43f9-9472-bd7fefb1b2c6
+                    stepCounter: 2afce239-f497-4531-9d9d-9465641c145d
+                transform: ""
+          - columnReference:
+              columnCounter: 2e81a5f1-f161-469e-8f75-dae6d374020e
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PILOTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a417ce80-e8ce-493b-9d36-d3ab337e8446
+                    stepCounter: 2afce239-f497-4531-9d9d-9465641c145d
+                transform: ""
+          - columnReference:
+              columnCounter: 16865894-5014-413a-b8d7-d8a379724466
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FIRSTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 728ec7b1-1f10-49ac-91b8-fd0488bbe650
+                    stepCounter: 2afce239-f497-4531-9d9d-9465641c145d
+                transform: ""
+          - columnReference:
+              columnCounter: d7de329f-c3b0-41a2-872d-47bb14c5ac71
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LASTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0ba5912b-9b85-4d8d-937a-f366706e150b
+                    stepCounter: 2afce239-f497-4531-9d9d-9465641c145d
+                transform: ""
+          - columnReference:
+              columnCounter: e88b8f20-6939-44af-8d4f-b879cec72975
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: GENDER
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ef8e9ea0-ea4a-4abe-ada5-5471851d3d2e
+                    stepCounter: 2afce239-f497-4531-9d9d-9465641c145d
+                transform: ""
+          - columnReference:
+              columnCounter: 84d836c3-c00d-40a0-84c1-471736ca03a9
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isChangeTracking: true
+            name: AGE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d1ea13ad-3091-4a4d-863d-0240cce68864
+                    stepCounter: 2afce239-f497-4531-9d9d-9465641c145d
+                transform: ""
+          - columnReference:
+              columnCounter: 5770aedd-eb39-4c6d-a0f9-7ea17114ad89
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            dataType: VARCHAR
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isChangeTracking: true
+            name: AGE_CATEGORY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8e9350f3-1992-454f-a495-bcd00a944233
+                    stepCounter: 2afce239-f497-4531-9d9d-9465641c145d
+                transform: ""
+          - columnReference:
+              columnCounter: 808a542e-9ea1-475f-932e-7e85b07c6845
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isChangeTracking: true
+            name: NATIONALITY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 345390a3-4e50-4d5c-935d-dc194b81c208
+                    stepCounter: 2afce239-f497-4531-9d9d-9465641c145d
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ef2eee96-1ea9-4566-8403-7dd1f03f1566
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            config: {}
+            dataType: NUMBER
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemVersion: true
+            name: SYSTEM_VERSION
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 909a8f3b-b053-4cfe-9aa6-2c5828f95e37
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCurrentFlag: true
+            name: SYSTEM_CURRENT_FLAG
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e0ec7a31-acb8-4be1-8359-54c9751b348c
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemStartDate: true
+            name: SYSTEM_START_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1dc31a12-fa18-46d8-ad33-1c08bc11c9d1
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemEndDate: true
+            name: SYSTEM_END_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST('2999-12-31 00:00:00' AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2346f7a5-681b-452c-9704-d7104e246074
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a007eb3e-4752-45f3-8d9c-5abeb5edb9d5
+              stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: AIRLINES_TARGET
+                nodeName: STG_PASSENGER_INFO
+            join:
+              joinCondition: FROM {{ ref('AIRLINES_TARGET', 'STG_PASSENGER_INFO') }} "STG_PASSENGER_INFO"
+            name: DIM_PASSENGER_INFO
+            noLinkRefs: []
+      name: DIM_PASSENGER_INFO
+      overrideSQL: false
+      schema: ""
+      sqlType: Dimension
+      type: sql
+    stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502

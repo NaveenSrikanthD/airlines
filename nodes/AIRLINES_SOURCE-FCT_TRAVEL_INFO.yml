@@ -1,0 +1,218 @@
+steps:
+  FCT_TRAVEL_INFO-09394a8b-14b6-4409-92aa-26a9797ed21f:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: AIRLINES_SOURCE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: 4fdca1d4-b9a8-42a9-b79e-1b7ab883b8a5
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            dataType: VARCHAR(16777216)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            isBusinessKey: true
+            name: PILOTNAME
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 67931c8b-946d-4ce0-bbe9-18656aff73a6
+                    stepCounter: 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+                transform: DISTINCT "STG_TRAVEL_INFO"."PILOTNAME"
+          - appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: cf339d3e-d498-4f3d-bb34-0e6010336ee4
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: LATEST_DEPARTURE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 305c9dc3-61ac-4186-ae75-0fbd0999362d
+                    stepCounter: 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: 8c98e312-dc80-42cd-a815-9ea09c174ee5
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            dataType: NUMBER(13,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: SENIOR_PAX_COUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 53146004-b3c9-4e9a-a7da-32979e6fd67a
+                    stepCounter: 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: c89b004e-1fc3-42f6-9684-92fb0933fffa
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            dataType: NUMBER(13,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MIDDLE_AGED_PAX_COUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1ad1b3d3-dc2e-4bf4-9a65-655bbf1814a5
+                    stepCounter: 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: c0d706d9-e9c5-4c6e-ace3-0bf00c1f379e
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            dataType: NUMBER(13,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: YOUTH_PAX_COUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1a7cf78d-0a46-4bae-8a2e-6dc1dcd29af7
+                    stepCounter: 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: 4764f3ef-59e2-4c5d-b725-038f9436bb71
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            dataType: NUMBER(13,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: INFANT_PAX_COUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 31d19e09-ce79-411b-9187-09e37a430cc8
+                    stepCounter: 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: 14f1110b-e5d0-44f1-92ab-e7cecbf69f7a
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            dataType: NUMBER(13,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: MALE_COUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 2b6bf86b-93ee-4c27-ab99-72765c5c05c7
+                    stepCounter: 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: ba902537-187d-4fec-a7cd-3787a3f01150
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            dataType: NUMBER(13,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: FEMALE_COUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: b3cdd97f-3c07-405e-82d7-068eea0a71a1
+                    stepCounter: 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: 1bad1612-72c6-480e-a3e3-d76129bd325b
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            dataType: NUMBER(18,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: TOTAL_PAX_COUNT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: edca9495-7a9a-4b19-bdb7-a361e8e97f7e
+                    stepCounter: 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: a2ba39ec-7955-4bf9-bc34-0a029efb6212
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests:
+              hasNull: false
+            columnReference:
+              columnCounter: fdf54717-67fd-4aa5-bad8-16887a99a394
+              stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: AIRLINES_TARGET
+                nodeName: STG_TRAVEL_INFO
+            join:
+              joinCondition: FROM {{ ref('AIRLINES_TARGET', 'STG_TRAVEL_INFO') }} "STG_TRAVEL_INFO"
+            name: FCT_TRAVEL_INFO
+            noLinkRefs: []
+      name: FCT_TRAVEL_INFO
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: 09394a8b-14b6-4409-92aa-26a9797ed21f
