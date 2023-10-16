@@ -5,13 +5,13 @@ locations:
   AIRLINES_SOURCE:
     mappingDefinitions:
       "16":
-        database: ""
-        schema: ""
+        database: AIRLINE
+        schema: AIRLINE_DATASET_QA
   AIRLINES_TARGET:
     mappingDefinitions:
       "16":
-        database: ""
-        schema: ""
+        database: AIRLINE
+        schema: AIRLINES_DATASET_QA
 macros: {}
 packages: {}
 projects: {}
