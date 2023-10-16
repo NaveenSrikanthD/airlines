@@ -1,6 +1,13 @@
 defaultStorageMapping: AIRLINES_SOURCE
 installedPackages: {}
-jobs: {}
+jobs:
+  Job-2:
+    excludeSelector: ""
+    id: 2
+    includeSelector: "{ location: AIRLINES_SOURCE name: PASSENGER_INFO } OR { location: AIRLINES_TARGET name: STG_PASSENGER_INFO } OR { location: AIRLINES_TARGET name: DIM_PASSENGER_INFO }"
+    name: passenger_flow
+    steps: []
+    subgraphs: []
 locations:
   AIRLINES_SOURCE:
     mappingDefinitions:
@@ -1474,5 +1481,12 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-4:
+    id: "4"
+    name: travel_info
+    steps:
+      - 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+      - 0a5403a0-42ca-4626-98fb-42a73dd82a2c
+      - 09394a8b-14b6-4409-92aa-26a9797ed21f
 version: 2

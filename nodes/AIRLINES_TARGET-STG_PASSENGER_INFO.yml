@@ -150,6 +150,27 @@ steps:
                   - columnCounter: 802cc060-530b-46a4-9438-9d7caf042c7f
                     stepCounter: c50221a7-ee9c-4545-993f-43540f7f85e1
                 transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b51c4a0a-d57c-4179-8b88-8889e70b1222
+              stepCounter: 2afce239-f497-4531-9d9d-9465641c145d
+            config: {}
+            dataType: VARCHAR
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: FIRSTNAME_HASH
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: ABS(HASH("PASSENGER_INFO"."FIRSTNAME"))
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs:
           - hasNull
