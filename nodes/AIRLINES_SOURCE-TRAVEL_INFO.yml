@@ -1,0 +1,154 @@
+steps:
+  TRAVEL_INFO-9607fcd9-1ec5-4578-b08b-e3b5bdc5677d:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: AIRLINES_SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 22151bc3-d553-4117-9a61-50e66c14a4ed
+              stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: PILOTNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: fd03ba98-349b-4ecf-a49e-0a6977d6846b
+              stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+            config: {}
+            dataType: DATE
+            defaultValue: ""
+            description: ""
+            name: LATEST_DEPARTURE_DATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b0c70209-436d-450a-affe-cdfd3b483df6
+              stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+            config: {}
+            dataType: NUMBER(13,0)
+            defaultValue: ""
+            description: ""
+            name: SENIOR_PAX_COUNT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cc790eaa-621b-4a52-9b27-8494c4f64b5a
+              stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+            config: {}
+            dataType: NUMBER(13,0)
+            defaultValue: ""
+            description: ""
+            name: MIDDLE_AGED_PAX_COUNT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ee03417a-0733-4294-baf3-d4775db89362
+              stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+            config: {}
+            dataType: NUMBER(13,0)
+            defaultValue: ""
+            description: ""
+            name: YOUTH_PAX_COUNT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 261b20bf-eaa9-4a73-ab59-68e368d77db2
+              stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+            config: {}
+            dataType: NUMBER(13,0)
+            defaultValue: ""
+            description: ""
+            name: INFANT_PAX_COUNT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5333558f-c4d7-4fa9-9f57-bd1bd95e9da4
+              stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+            config: {}
+            dataType: NUMBER(18,0)
+            defaultValue: ""
+            description: ""
+            name: PAX_COUNT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c3273524-9f9d-49f8-b329-733b4d68f5d2
+              stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+            config: {}
+            dataType: NUMBER(13,0)
+            defaultValue: ""
+            description: ""
+            name: MALE_COUNT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7fe4aafb-84d8-4d4b-8e66-80165a590acc
+              stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d
+            config: {}
+            dataType: NUMBER(13,0)
+            defaultValue: ""
+            description: ""
+            name: FEMALE_COUNT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('AIRLINES_SOURCE', 'TRAVEL_INFO') }}
+      name: TRAVEL_INFO
+      schema: ""
+      sqlType: Source
+      table: TRAVEL_INFO
+      type: sourceInput
+    stepCounter: 9607fcd9-1ec5-4578-b08b-e3b5bdc5677d

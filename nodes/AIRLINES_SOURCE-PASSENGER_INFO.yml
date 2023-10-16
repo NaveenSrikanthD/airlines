@@ -1,0 +1,124 @@
+steps:
+  PASSENGER_INFO-c50221a7-ee9c-4545-993f-43540f7f85e1:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: AIRLINES_SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 62b454c2-aa32-4850-97c3-14aaa6739ddf
+              stepCounter: c50221a7-ee9c-4545-993f-43540f7f85e1
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: PASSENGERID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c20b6c82-8ea1-4694-8898-71a81c66baff
+              stepCounter: c50221a7-ee9c-4545-993f-43540f7f85e1
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: PILOTNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 26b24715-f920-45aa-bc5a-e0819c739cc4
+              stepCounter: c50221a7-ee9c-4545-993f-43540f7f85e1
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: FIRSTNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8159f24d-907a-4f3b-b4a4-1f6ece407887
+              stepCounter: c50221a7-ee9c-4545-993f-43540f7f85e1
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: LASTNAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 247724f0-a2cd-4995-bd70-68d23361a4d9
+              stepCounter: c50221a7-ee9c-4545-993f-43540f7f85e1
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: GENDER
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 4928d588-fe50-4e8c-ac78-61cee2046fb8
+              stepCounter: c50221a7-ee9c-4545-993f-43540f7f85e1
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: AGE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 802cc060-530b-46a4-9438-9d7caf042c7f
+              stepCounter: c50221a7-ee9c-4545-993f-43540f7f85e1
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: NATIONALITY
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('AIRLINES_SOURCE', 'PASSENGER_INFO') }}
+      name: PASSENGER_INFO
+      schema: ""
+      sqlType: Source
+      table: PASSENGER_INFO
+      type: sourceInput
+    stepCounter: c50221a7-ee9c-4545-993f-43540f7f85e1
