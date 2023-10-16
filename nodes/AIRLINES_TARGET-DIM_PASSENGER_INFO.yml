@@ -107,7 +107,7 @@ steps:
           - columnReference:
               columnCounter: 84d836c3-c00d-40a0-84c1-471736ca03a9
               stepCounter: 26a1fb4c-3aee-4d5e-ace6-428b280af502
-            dataType: NUMBER(38,0)
+            dataType: varchar
             description: ""
             hashColumns: []
             hashDetails: null

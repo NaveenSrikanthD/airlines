@@ -9,7 +9,7 @@ steps:
       deployEnabled: true
       description: ""
       isMultisource: false
-      locationName: AIRLINES_SOURCE
+      locationName: AIRLINES_TARGET
       materializationType: table
       metadata:
         appliedNodeTests: []
