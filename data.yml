@@ -6,7 +6,7 @@ locations:
     mappingDefinitions:
       "16":
         database: AIRLINE
-        schema: AIRLINE_DATASET_QA
+        schema: AIRLINES_DATASET_QA
   AIRLINES_TARGET:
     mappingDefinitions:
       "16":
